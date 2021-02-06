@@ -29,6 +29,7 @@
     "prettier"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "camelcase": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
@@ -46,7 +47,6 @@
     ],
     "import/prefer-default-export": "off",
     "no-use-before-define": "off",
-    "prettier/prettier": "error",
     "import/extensions": [
       "error",
       "ignorePackages",
