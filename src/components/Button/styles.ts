@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { shade } from 'polished';
+import { shade } from "polished";
 
 export const StyledButton = styled.button`
   background: #ff9000;
@@ -15,6 +15,6 @@ export const StyledButton = styled.button`
   transition: background-color 0.2s;
 
   &:hover {
-    background: ${shade(0.2, '#ff9000')};
+    background: ${shade(0.2, "#ff9000")};
   }
 `;

@@ -1,13 +1,14 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from "react";
+import { StyledButton } from "./styles";
 
-import { StyledButton } from './styles';
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  loading?: boolean;
+};
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
-
-const Button: React.FC<ButtonProps> = ({ children, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({ children, loading, ...rest }) => {
   return (
     <StyledButton type="button" {...rest}>
-      {children}
+      {loading ? "Carregando..." : children}
     </StyledButton>
   );
 };

@@ -1,7 +1,7 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "es6": true,
+    "browser": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -30,31 +30,40 @@
   ],
   "rules": {
     "prettier/prettier": "error",
-    "camelcase": "off",
-    "react/jsx-one-expression-per-line": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
-    "no-unused-expressions": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [
       1,
       {
         "extensions": [
-          ".tsx"
+          ".tsx",
+          ".jsx"
         ]
       }
     ],
-    "import/prefer-default-export": "off",
-    "no-use-before-define": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
       {
         "ts": "never",
-        "tsx": "never"
+        "tsx": "never",
+        "jsx": "never",
+        "js": "never"
       }
-    ]
+    ],
+    "camelcase": "off",
+    "no-nested-ternary": "off",
+    "radix": "off",
+    "react/jsx-curly-newline": "off",
+    "no-empty-pattern": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "import/prefer-default-export": "off"
   },
   "settings": {
     "import/resolver": {

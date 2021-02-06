@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom";
 
-import GlobalStyle from './styles/global';
+import GlobalStyle from "./styles/global";
 
-import Routes from './routes'
+import Routes from "./routes";
 
-import AppProvider from './hooks';
+import AppProvider from "./hooks";
 
 const App: React.FC = () => {
   return (
@@ -16,7 +16,6 @@ const App: React.FC = () => {
       </AppProvider>
       <GlobalStyle />
     </BrowserRouter>
-
   );
 };
 
