@@ -32,7 +32,7 @@ interface SignInFormData {
 const SignIn: React.FC = () => {
   const history = useHistory();
 
-  const { signIn, user } = useAuth();
+  const { signIn } = useAuth();
 
   const { addToast } = useToast();
 
